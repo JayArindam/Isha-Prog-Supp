@@ -10,6 +10,7 @@ const EditTicketForm = ({ ticket }) => {
     title: "",
     description: "",
     name:"",
+    Pnumber:"",
     email:"",
     status: "not started",
     category: "Shambhavi Mahamudra Kriya",
@@ -18,6 +19,7 @@ const EditTicketForm = ({ ticket }) => {
   if (EDITMODE) {
     startingTicketData["title"] = ticket.title;
     startingTicketData["name"] = ticket.name;
+    startingTicketData["Pnumber"] = ticket.Pnumber;
     startingTicketData["email"] = ticket.email;
     startingTicketData["description"] = ticket.description;
     startingTicketData["status"] = ticket.status;
@@ -149,6 +151,17 @@ const EditTicketForm = ({ ticket }) => {
           onChange={handleChange}
           required={true}
           value={formData.name}
+        />
+
+        <label className="text-white">Phone Number</label>
+        <input
+          className="bg-white"
+          id="Pnumber"
+          name="Pnumber"
+          type="number"
+          onChange={handleChange}
+          required={true}
+          value={formData.Pnumber} // Ensure this is the correct state key
         />
 
 

@@ -23,6 +23,7 @@ const ticketSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
     name: {type:String , required: true},
+    Pnumber: {type:Number , require: true},
     email: {type:String , require: true},
     description: { type: String },
     category: { type: String },
