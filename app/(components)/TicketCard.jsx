@@ -28,7 +28,7 @@ const TicketCard = ({ ticket }) => {
           <DeleteBlock id={ticket._id} />
         </div>
       </div>
-      <Link href={`https://sample-isha-program-support.vercel.app/ProgramSupport/${ticket._id}`} style={{ display: "contents" }}>
+      <Link href={`/ProgramSupport/${ticket._id}`} style={{ display: "contents" }}>
         <h4 className="mb-1">{ticket.title}</h4>
         <hr className="h-px  border-0 bg-page mb-2 "></hr>
         <p className="whitespace-pre-wrap">{ticket.description}</p>
